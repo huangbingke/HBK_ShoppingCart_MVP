@@ -83,7 +83,6 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     HBK_ShoppingCartHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"HBK_ShoppingCartHeaderView"];
-    headerView.contentView.backgroundColor = [UIColor whiteColor];
     [headerView configureData:self.presenter section:section];
     return headerView;
 }
