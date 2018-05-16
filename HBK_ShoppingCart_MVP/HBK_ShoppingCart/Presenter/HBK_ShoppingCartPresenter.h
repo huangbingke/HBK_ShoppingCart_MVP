@@ -6,29 +6,41 @@
 //  Copyright © 2018年 KK. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
+#import "HBK_BasePresenter.h"
+#import <UIKit/UIKit.h>
 @class HBK_StoreModel;
-
-@interface HBK_ShoppingCartPresenter<E> : NSObject
-
-{
-    //MVP中负责更新的视图
-    __weak E _view;
-}
+@class HBK_GoodsModel;
+@interface HBK_ShoppingCartPresenter : HBK_BasePresenter
 
 
 
+
+//数据源
 @property (nonatomic, strong) NSMutableArray <HBK_StoreModel *> *storeArray;
+//选中的商品集合
+@property (nonatomic, strong) NSMutableArray <HBK_GoodsModel *> *selectArray;
+
+/** 模仿请求数据 */
+- (void)loadingDataForPlist;
 
 
+/** 判断是否全选 */
+- (void)judgeIsAllSelect;
 
+/** 判断某一个分区是否全选*/
+- (void)judgeIsAllSelectSection:(NSInteger)section;
 
+/** 计算价格 */
+- (double)countPrice;
 
+/** 刷新 */
+- (void)reloadData;
 
+/** 全选 */
+- (void)shoppingCartBottomViewAllSelectGoods:(BOOL)isClick;
 
-
-
+/** 删除某个商品 */
+- (void)deleteGoodsWithIndexPath:(NSIndexPath *)indexPath;
 
 
 

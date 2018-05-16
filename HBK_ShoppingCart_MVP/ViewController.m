@@ -23,6 +23,7 @@
 //进入购物车
 - (IBAction)go:(UIButton *)sender {
     HBK_ShoppingCartViewController *shoppingCartVC = [[HBK_ShoppingCartViewController alloc] init];
+    shoppingCartVC.isSubPage = YES;
     [self.navigationController pushViewController:shoppingCartVC animated:YES];
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F41720420AAFFF5008E0402 /* HBK_BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F41720320AAFFF5008E0402 /* HBK_BasePresenter.m */; };
 		0FFD3F9220A85506003E0FE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD3F9120A85506003E0FE7 /* AppDelegate.m */; };
 		0FFD3F9520A85506003E0FE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD3F9420A85506003E0FE7 /* ViewController.m */; };
 		0FFD3F9820A85506003E0FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD3F9620A85506003E0FE7 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F41720220AAFFF5008E0402 /* HBK_BasePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBK_BasePresenter.h; sourceTree = "<group>"; };
+		0F41720320AAFFF5008E0402 /* HBK_BasePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBK_BasePresenter.m; sourceTree = "<group>"; };
 		0FFD3F8D20A85506003E0FE7 /* HBK_ShoppingCart_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBK_ShoppingCart_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFD3F9020A85506003E0FE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0FFD3F9120A85506003E0FE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,15 +139,15 @@
 		0FFD3FAD20A859B7003E0FE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0FFD3FAE20A859B7003E0FE7 /* HBK_ShopppingCartBottomView.xib */,
 				0FFD3FAF20A859B7003E0FE7 /* HBK_ShoppingCartCell.h */,
-				0FFD3FB020A859B7003E0FE7 /* HBK_ShoppingCartHeaderView.h */,
-				0FFD3FB120A859B7003E0FE7 /* HBK_ShopppingCartBottomView.m */,
-				0FFD3FB220A859B7003E0FE7 /* HBK_ShoppingCartCell.xib */,
 				0FFD3FB320A859B7003E0FE7 /* HBK_ShoppingCartCell.m */,
+				0FFD3FB220A859B7003E0FE7 /* HBK_ShoppingCartCell.xib */,
+				0FFD3FB020A859B7003E0FE7 /* HBK_ShoppingCartHeaderView.h */,
 				0FFD3FB420A859B7003E0FE7 /* HBK_ShoppingCartHeaderView.m */,
 				0FFD3FB520A859B7003E0FE7 /* HBK_ShoppingCartHeaderView.xib */,
 				0FFD3FB620A859B7003E0FE7 /* HBK_ShopppingCartBottomView.h */,
+				0FFD3FB120A859B7003E0FE7 /* HBK_ShopppingCartBottomView.m */,
+				0FFD3FAE20A859B7003E0FE7 /* HBK_ShopppingCartBottomView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				0FFD3FC420A85BD0003E0FE7 /* HBK_ShoppingCartProtocol.h */,
+				0F41720220AAFFF5008E0402 /* HBK_BasePresenter.h */,
+				0F41720320AAFFF5008E0402 /* HBK_BasePresenter.m */,
 				0FFD3FC520A85BEC003E0FE7 /* HBK_ShoppingCartPresenter.h */,
 				0FFD3FC620A85BEC003E0FE7 /* HBK_ShoppingCartPresenter.m */,
 			);
@@ -236,6 +241,7 @@
 				0FFD3FB720A859B8003E0FE7 /* HBK_ShoppingCartViewController.m in Sources */,
 				0FFD3FBD20A859B8003E0FE7 /* HBK_ShoppingCartHeaderView.m in Sources */,
 				0FFD3FB820A859B8003E0FE7 /* HBK_ShoppingCartModel.m in Sources */,
+				0F41720420AAFFF5008E0402 /* HBK_BasePresenter.m in Sources */,
 				0FFD3FBA20A859B8003E0FE7 /* HBK_ShopppingCartBottomView.m in Sources */,
 				0FFD3F9520A85506003E0FE7 /* ViewController.m in Sources */,
 				0FFD3FA020A85508003E0FE7 /* main.m in Sources */,

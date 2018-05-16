@@ -13,11 +13,15 @@
 
 
 @required;
+
+- (void)showLoadingHUD;
+- (void)hideLoadingHUD;
 - (void)reloadData;
 
-
-
-
-
+- (void)isAllSelect:(BOOL)selected;
+- (void)isAllSelectSection:(BOOL)selected section:(NSInteger)section;
+- (void)bottomViewAllPrice:(double)price;
+- (void)deleteRowForIndexPath:(NSIndexPath *)indexPath;
+- (void)bottomViewIsClick:(BOOL)isClick;
 
 @end

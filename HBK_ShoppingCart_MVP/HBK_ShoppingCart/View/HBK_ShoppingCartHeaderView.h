@@ -8,13 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "HBK_ShoppingCartModel.h"
+@class HBK_ShoppingCartPresenter;
 @interface HBK_ShoppingCartHeaderView : UITableViewHeaderFooterView
 
 @property (weak, nonatomic) IBOutlet UIButton *clickBtn;
 @property (weak, nonatomic) IBOutlet UILabel *storeNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *storeImageView;
 
-@property (nonatomic, strong) HBK_StoreModel *storeModel;
-@property (nonatomic, copy) void (^ClickBlock)(BOOL isClick);
 @property (nonatomic, assign) BOOL isClick;
+
+@property (nonatomic, copy) void (^ClickBlock)(BOOL isClick);
+
+- (void)configureData:(HBK_ShoppingCartPresenter *)presenter section:(NSInteger)section;
+
+
+
 @end

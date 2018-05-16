@@ -8,17 +8,29 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol HBK_ShopppingCartBottomViewDelegate <NSObject>
+
+@required
+- (void)shopppingCartBottomViewDidAllClickGoods:(BOOL)isClick;
+- (void)shopppingCartBottomViewDidAccount;
+
+@end
+
 @interface HBK_ShopppingCartBottomView : UIView
 
 
 
 @property (weak, nonatomic) IBOutlet UILabel *allPriceLabel;
 
-@property (nonatomic, copy) void (^AllClickBlock)(BOOL isClick);
-@property (nonatomic, copy) void (^AccountBlock)();
+//@property (nonatomic, copy) void (^AllClickBlock)(BOOL isClick);
+//@property (nonatomic, copy) void (^AccountBlock)(void);
 
 @property (weak, nonatomic) IBOutlet UIButton *clickBtn;
 
 @property (nonatomic, assign) BOOL isClick;
+
+@property (nonatomic, weak) id<HBK_ShopppingCartBottomViewDelegate>delegate;
+
 
 @end

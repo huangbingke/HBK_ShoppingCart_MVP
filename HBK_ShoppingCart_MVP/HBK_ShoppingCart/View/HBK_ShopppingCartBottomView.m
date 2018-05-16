@@ -24,14 +24,20 @@
     } else {
         [sender setImage:[UIImage imageNamed:@"unClick"] forState:(UIControlStateNormal)];
     }
-    if (self.AllClickBlock) {
-        self.AllClickBlock(sender.selected);
+//    if (self.AllClickBlock) {
+//        self.AllClickBlock(sender.selected);
+//    }
+    if (self.delegate && [self.delegate respondsToSelector:@selector(shopppingCartBottomViewDidAllClickGoods:)]) {
+        [self.delegate shopppingCartBottomViewDidAllClickGoods:sender.selected];
     }
 }
 
 - (IBAction)accountBtn:(UIButton *)sender {
-    if (self.AccountBlock) {
-        self.AccountBlock();
+//    if (self.AccountBlock) {
+//        self.AccountBlock();
+//    }
+    if (self.delegate && [self.delegate respondsToSelector:@selector(shopppingCartBottomViewDidAccount)]) {
+        [self.delegate shopppingCartBottomViewDidAccount];
     }
 }
 
