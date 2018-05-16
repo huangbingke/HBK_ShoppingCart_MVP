@@ -17,8 +17,6 @@
 
 @property (nonatomic, assign) BOOL isClick;
 
-@property (nonatomic, copy) void (^ClickBlock)(BOOL isClick);
-
 - (void)configureData:(HBK_ShoppingCartPresenter *)presenter section:(NSInteger)section;
 
 

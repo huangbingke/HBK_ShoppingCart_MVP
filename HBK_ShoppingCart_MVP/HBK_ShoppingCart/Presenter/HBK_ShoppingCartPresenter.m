@@ -12,20 +12,6 @@
 
 @implementation HBK_ShoppingCartPresenter
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma mark  -------------------- 此处模仿网络请求, 加载plist文件内容
 
 - (void)loadingDataForPlist {

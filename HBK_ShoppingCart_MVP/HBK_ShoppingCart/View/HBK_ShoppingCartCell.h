@@ -22,21 +22,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *addBtn;
 
 
-
-/** 选中 */
-@property (nonatomic, copy) void (^ClickRowBlock)(BOOL isClick);
-
-/** 加 */
-@property (nonatomic, copy) void (^AddBlock)(UILabel *countLabel);
-
-/** 减 */
-@property (nonatomic, copy) void (^CutBlock)(UILabel *countLabel);
-
-
-
-
-
-
 - (void)configureData:(HBK_ShoppingCartPresenter *)presenter indexPath:(NSIndexPath *)indexPath;
 
 

@@ -23,8 +23,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *allPriceLabel;
 
-//@property (nonatomic, copy) void (^AllClickBlock)(BOOL isClick);
-//@property (nonatomic, copy) void (^AccountBlock)(void);
 
 @property (weak, nonatomic) IBOutlet UIButton *clickBtn;
 
